@@ -4,7 +4,7 @@ public class ECommerceFacade {
     private  OrderController orderController;
     private  AdvertisementController advertisementController;
     private  ShippingController shippingController;
-    ECommerceFacade(){
+    public ECommerceFacade(){
         orderController=new OrderController();
         advertisementController=new AdvertisementController();
         shippingController=new ShippingController();
