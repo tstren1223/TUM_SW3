@@ -4,7 +4,11 @@ public class ECommerceFacade {
     private  OrderController orderController;
     private  AdvertisementController advertisementController;
     private  ShippingController shippingController;
-
+    ECommerceFacade(){
+        orderController=new OrderController();
+        advertisementController=new AdvertisementController();
+        shippingController=new ShippingController();
+    }
     public void playAdvertisement(int ageRestriction) {
         advertisementController.playAdvertisement(ageRestriction);
     }
