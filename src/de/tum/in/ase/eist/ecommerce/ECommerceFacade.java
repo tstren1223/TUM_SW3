@@ -27,7 +27,6 @@ public class ECommerceFacade {
     public void shipOrder(Order order,String s) {
         order.setShipping(shippingController.createShipping(s));
         shippingController.shipOrder(order);
-        shippingController.commissionExternalParcelService();
     }
     
 }
