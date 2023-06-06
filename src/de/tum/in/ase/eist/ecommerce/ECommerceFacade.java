@@ -1,9 +1,9 @@
 package de.tum.in.ase.eist.ecommerce;
 
 public class ECommerceFacade {
-    private static OrderController orderController;
-    private static AdvertisementController advertisementController;
-    private static ShippingController shippingController;
+    private  OrderController orderController;
+    private  AdvertisementController advertisementController;
+    private  ShippingController shippingController;
 
     public void playAdvertisement(int ageRestriction) {
         advertisementController.playAdvertisement(ageRestriction);
